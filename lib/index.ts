@@ -210,7 +210,7 @@ const parse = (markdown: string, options = defaultOptions) => {
 
               rpy += `${quoted(choice.trim())} if ${conditional}:`
             } else {
-              rpy += `${quoted(choiceContent)}`
+              rpy += `${quoted(choiceContent)}:`
             }
           }
 
