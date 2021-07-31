@@ -1,0 +1,51 @@
+{
+  "name": "mdrpy",
+  "version": "0.0.2",
+  "description": "Simple Markdown scenario to Ren'Py script parser library",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovue/mdrpy.git"
+  },
+  "keywords": [
+    "markdown",
+    "renpy",
+    "parse",
+    "scenario"
+  ],
+  "author": "Yegor Gunko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sovue/mdrpy/issues"
+  },
+  "homepage": "https://github.com/sovue/mdrpy#readme",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.18.4",
+    "@rollup/plugin-commonjs": "^19.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.3",
+    "@types/markdown-it": "^12.0.3",
+    "mdrpy": "^0.0.2",
+    "rollup": "^2.55.0",
+    "rollup-plugin-polyfill-node": "^0.7.0",
+    "tslib": "^2.3.0",
+    "typedoc": "^0.21.4",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "cyrillic-to-translit-js": "^3.1.0",
+    "markdown-it": "^12.1.0"
+  }
+}
